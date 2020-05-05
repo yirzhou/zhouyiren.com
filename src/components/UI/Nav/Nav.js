@@ -21,12 +21,18 @@ class Nav extends React.Component {
                 <NavItem exact link="/">
                     Home
                 </NavItem>
+                {/* <NavItem exact link="/résumé">
+                    Résumé
+                </NavItem> */}
+                <NavItem exact link="/videos">
+                    Videos I Made
+                </NavItem>
                 <NavItem exact link="/about">
                     About
                 </NavItem>
-                <NavItem exact link="/notes">
+                {/* <NavItem exact link="/notes">
                     I Write Stuff
-                </NavItem>
+                </NavItem> */}
                 <Button className={classes.Icon} onClick={this.toggleHandler}>
                     <i className="fa fa-bars"></i>
                 </Button>

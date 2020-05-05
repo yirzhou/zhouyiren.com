@@ -1,0 +1,26 @@
+.Resume {
+    display: flex;
+    flex-direction: column
+}
+
+.Heading {
+    display: flex;
+    flex-direction: row;
+    font-variant: small-caps;
+    font-size: 26px;
+}
+
+.MetaData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.LineBreak {
+    width: 100%;
+}
+
+.Section {
+    padding-top: 20px;
+}

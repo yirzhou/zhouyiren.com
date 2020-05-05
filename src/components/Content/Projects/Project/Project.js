@@ -9,6 +9,7 @@ const project = (props) => {
                 className={classes.Anchor}
                 href={props.url}
                 rel="noopener noreferrer"
+                target="_blank"
             >
                 <div className={classes.Title}>{props.title}</div>
                 <div className={classes.Dot}>

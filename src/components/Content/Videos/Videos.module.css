@@ -1,0 +1,26 @@
+.Wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.VideoContainer {
+	position:relative;
+	padding-bottom:56.25%;
+    margin-top:30px;
+	height:0;
+    overflow:hidden;
+}
+
+.VideoContainer iframe, .VideoContainer object, .VideoContainer embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.Meta {
+    padding: 25px 10px 25px 10px;
+    text-align: justify;
+    text-justify: inter-word; 
+}

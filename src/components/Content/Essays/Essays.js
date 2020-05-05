@@ -5,7 +5,10 @@ class Essays extends React.Component {
     render() {
         return (
             <Content>
-                <p>Nothing here yet... please return to my home page!</p>
+                <p>
+                    This feature is under construction, and I'm working hard to
+                    make it happen soon!
+                </p>
             </Content>
         );
     }

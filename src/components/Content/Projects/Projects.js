@@ -1,6 +1,8 @@
 import React from "react";
 import Project from "./Project/Project";
 import classes from "./Projects.module.css";
+import Spinner from "../../UI/Spinner/Spinner";
+import Content from "../Content";
 
 const token = process.env.REACT_APP_GIT_TOKEN;
 const user = process.env.REACT_APP_GIT_USER;
@@ -25,6 +27,7 @@ class Projects extends React.Component {
     state = {
         projects: [],
         error: null,
+        showSpinner: true,
     };
 
     componentDidMount() {
@@ -39,7 +42,6 @@ class Projects extends React.Component {
         })
             .then((res) => res.json())
             .then((data) => {
-                console.log(data);
                 let projects = [];
                 for (let node of data.data.user.pinnedItems.edges) {
                     projects.push({
@@ -48,15 +50,25 @@ class Projects extends React.Component {
                         url: node.node.url,
                     });
                 }
-                this.setState({ projects: projects });
+                this.setState({
+                    projects: projects,
+                    error: null,
+                    showSpinner: false,
+                });
             })
             .catch((err) => {
-                this.setState({ error: err });
+                this.setState({ error: err, showSpinner: false });
             });
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        if (nextState !== this.state) return true;
+        return false;
     }
 
     render() {
         let projects = [];
+
         if (this.state.error && !this.state.projects.length)
             projects = (
                 <p>
@@ -79,7 +91,13 @@ class Projects extends React.Component {
                 );
             });
         }
-        return <div className={classes.ProjectWrapper}>{projects}</div>;
+
+        if (this.state.showSpinner) projects = <Spinner />;
+        return (
+            <Content>
+                <div className={classes.ProjectWrapper}>{projects}</div>
+            </Content>
+        );
     }
 }
 
