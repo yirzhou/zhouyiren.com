@@ -6,7 +6,7 @@ const token = process.env.REACT_APP_GIT_TOKEN;
 const user = process.env.REACT_APP_GIT_USER;
 const query = `query {
             user(login:"${user}") {
-            pinnedItems(first: 3, types: [REPOSITORY, GIST]) {
+            pinnedItems(first: 4, types: [REPOSITORY, GIST]) {
               totalCount
               edges {
                 node {
