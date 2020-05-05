@@ -19,7 +19,7 @@ class Nav extends React.Component {
         return (
             <div className={this.state.classes.join(" ")}>
                 <NavItem exact link="/">
-                    Home
+                    Stuff I Built
                 </NavItem>
                 {/* <NavItem exact link="/résumé">
                     Résumé
