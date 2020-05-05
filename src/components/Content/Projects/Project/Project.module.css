@@ -1,0 +1,49 @@
+.Wrapper {
+    margin: .75rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.Anchor {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    color: #333;
+}
+
+.Anchor > div {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.Dot.fa {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2pt;
+}
+
+.Title {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.Description {
+    font-size: .95rem;
+    color: #8e8e8e;
+}
+
+.Title:hover {
+    color: #007acc;
+}
+
+@media (max-width: 768px) {
+    .Anchor {
+        flex-direction: column;
+    }
+
+    .Dot {
+        display: none;
+    }
+}

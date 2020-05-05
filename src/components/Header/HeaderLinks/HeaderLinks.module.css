@@ -1,0 +1,45 @@
+.HeaderLinks {
+    margin: auto 21px auto 21px;
+    padding-top: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.SocialLinks {
+    display: inline-block;
+    margin: 0;
+    float: left;
+}
+
+@media screen and (min-width: 31.25em) {
+    .HeaderLinks .SocialLinks {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 31.25em) {
+    .SocialLinks {
+        float: none;
+        margin: 0 0 0 5px;
+    }
+}
+
+@media screen and (min-width: 31.25em) {
+    .HeaderLinks {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 31.25em) {
+    .SocialLinks {
+        display: inline-block;
+        float: none;
+        
+    }
+}
+
+.SocialLinks a {
+    color: #686868;
+    margin-right: 15px;
+    text-decoration: none;
+}

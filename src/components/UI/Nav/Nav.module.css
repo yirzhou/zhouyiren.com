@@ -1,0 +1,53 @@
+.TopNav {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+  
+.TopNav a {
+    float: right;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.TopNav a:active {
+  color: #000000;
+}
+  
+.TopNav a:hover {
+    color: #007acc;
+}
+  
+.TopNav .Icon {
+    display: none;
+}
+  
+@media screen and (max-width: 600px) {
+    .TopNav a:not(:first-child) {display: none;}
+    .TopNav .Icon {
+      border: none;
+      float: right;
+      display: block;
+      cursor: pointer;
+      outline: none;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .TopNav.Responsive {display: block; position: relative;}
+    .TopNav.Responsive .Icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .TopNav.Responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}

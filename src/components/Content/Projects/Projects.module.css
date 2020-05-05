@@ -1,0 +1,9 @@
+a {
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.ProjectWrapper {
+    padding: .25rem 0;
+}

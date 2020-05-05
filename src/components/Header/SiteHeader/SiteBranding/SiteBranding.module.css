@@ -1,0 +1,43 @@
+.SiteBranding {
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+.SiteBranding p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+.SiteTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 1.2173913043;
+}
+
+.SiteTitle a {
+    color: #1a1a1a;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.SiteTitle p {
+    margin: 0 0 10px;
+}
+
+.SiteDescription {
+    font-family: "Montserrat", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 44.375em) {
+    .SiteTitle {
+        font-size: 36px;
+        font-size: 2.25rem;
+    }
+}

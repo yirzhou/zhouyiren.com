@@ -1,0 +1,38 @@
+.Header {
+    padding: 0 0 2em 0;
+    display: block;
+    color: #333;
+}
+
+.Container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 1200px) {
+    .Container {
+        width: 1170px;
+    }
+}
+
+@media (min-width: 992px) {
+    .Container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 768px) {
+    .Container {
+        width: 750px;
+    }
+}
+
+.HeaderLinks {
+    margin: auto 21px auto 21px;
+    padding-top: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
