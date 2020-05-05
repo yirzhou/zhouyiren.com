@@ -60,4 +60,4 @@ const videos = () => {
     );
 };
 
-export default videos;
+export default React.memo(videos);
