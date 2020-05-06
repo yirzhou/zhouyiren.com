@@ -16,9 +16,9 @@ function App() {
             <Switch>
                 {/* <Route path="/notes" exact component={Essays} /> */}
                 {/* <Route path="/résumé" exact component={Resume} /> */}
-                <Route path="/about" exact component={About} />
-                <Route path="/videos" exact component={Videos} />
                 <Route path="/" exact component={Projects} />
+                <Route path="/about" component={About} />
+                <Route path="/videos" component={Videos} />
             </Switch>
             <Footer />
         </div>

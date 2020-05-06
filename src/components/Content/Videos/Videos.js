@@ -15,7 +15,7 @@ const content = [
                 In a high-school English presentation back in 2014, I discussed
                 the my personal video editing experience and made this to
                 showcase the power of syncing audio with graphics. This was also
-                my first time of using <em>Cinema4D</em> to create 3D text
+                my first time of using <em>Cinema 4D</em> to create 3D text
                 objects to augment the reality.
             </p>
         ),

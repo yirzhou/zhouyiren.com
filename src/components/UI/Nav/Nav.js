@@ -24,12 +24,8 @@ class Nav extends React.Component {
                 {/* <NavItem exact link="/résumé">
                     Résumé
                 </NavItem> */}
-                <NavItem exact link="/videos">
-                    Videos I Made
-                </NavItem>
-                <NavItem exact link="/about">
-                    About
-                </NavItem>
+                <NavItem link="/videos">Videos I Made</NavItem>
+                <NavItem link="/about">About</NavItem>
                 {/* <NavItem exact link="/notes">
                     I Write Stuff
                 </NavItem> */}
