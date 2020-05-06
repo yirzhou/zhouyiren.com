@@ -1,11 +1,12 @@
 import React from "react";
 import classes from "./SiteBranding.module.css";
+import { NavLink } from "react-router-dom";
 
 const siteBranding = () => {
     return (
         <div className={classes.SiteBranding}>
             <p className={classes.SiteTitle}>
-                <a href="#">YIREN ZHOU</a>
+                <NavLink to="/">YIREN ZHOU</NavLink>
             </p>
             <p className={classes.SiteDescription}>
                 4A Computer Engineering @ UWaterloo

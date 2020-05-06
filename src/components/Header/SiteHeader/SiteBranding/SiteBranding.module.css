@@ -26,6 +26,10 @@
     background-color: transparent;
 }
 
+.SiteTitle a:hover {
+    color: #007acc;
+}
+
 .SiteTitle p {
     margin: 0 0 10px;
 }
