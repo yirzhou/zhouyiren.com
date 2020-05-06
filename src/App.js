@@ -4,6 +4,7 @@ import Projects from "./components/Content/Projects/Projects";
 // import Essays from "./components/Content/Essays/Essays";
 import About from "./components/Content/About/About";
 import Videos from "./components/Content/Videos/Videos";
+import Error from "./components/Content/Error/Error";
 // import Resume from "./components/Content/Resume/Resume";
 import Footer from "./components/Footer/Footer";
 import classes from "./App.css";
@@ -19,6 +20,7 @@ function App() {
                 <Route path="/" exact component={Projects} />
                 <Route path="/about" component={About} />
                 <Route path="/videos" component={Videos} />
+                <Route component={Error} />
             </Switch>
             <Footer />
         </div>

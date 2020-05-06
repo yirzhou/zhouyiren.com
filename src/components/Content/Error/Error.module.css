@@ -1,0 +1,68 @@
+.ErrorWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.NotFound {
+    max-width: 560px;
+    width: 100%;
+    line-height: 1.1;
+}
+
+.NotFound404 {
+    width: 182px;
+    height: 182px;
+    background-image: url('../../../assets/images/emoji.png');
+}
+
+.NotFound h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #151723;
+    text-transform: uppercase;
+}
+  
+.NotFound h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+    color: #151723;
+}
+  
+.NotFound p {
+    font-family: 'Nunito', sans-serif;
+    color: #999fa5;
+    font-weight: 400;
+}
+  
+.NotFound a {
+    font-family: 'Nunito', sans-serif;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #388dbc;
+  }
+  
+@media only screen and (max-width: 767px) {
+    .ErrorWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;        
+    }
+
+    .NotFound404 {
+      display: none
+    }
+
+    .NotFound {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+}
+  
